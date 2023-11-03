@@ -13,4 +13,4 @@ function onPlay(data) {
   localStorage.setItem(TIME_KEY, JSON.stringify(data.seconds) )
 }
 
-player.setCurrentTime(JSON.parse(localStorage.getItem(TIME_KEY)) );
+player.setCurrentTime(JSON.parse(localStorage.getItem(TIME_KEY)||0) );
